@@ -1,0 +1,18 @@
+# Secrets
+.env
+!.example.env
+
+# Logs
+*.log*
+
+# Venv
+venv/
+.venv/
+
+# Python
+*.pyc
+__pycache__/
+
+# Database
+*.db
+*.db-journal
