@@ -1,0 +1,41 @@
+exclude = [
+    ".git",
+    ".venv",
+    "*.pyc",
+    "__pycache__",
+]
+
+# Formatting options
+line-length = 100
+indent-width = 4
+
+# Assume Python 3.12
+target-version = "py312"
+
+[lint]
+# https://docs.astral.sh/ruff/rules/
+select = [
+    "B", # flake8-bugbear
+    "B9",
+    "C", 
+    "E", # pycodestyle
+    "F", # Pyflakes
+    "I", # isort
+    "N", # pep8-naming
+    "UP", # pyupgrade
+    "W", # pycodestyle
+]
+ignore = [
+    # "B909", # loop-iterator-mutation
+    # "E203", # whitespace-before-punctuation
+    # "E266", # multiple-leading-hashes-for-block-comment
+    # "E501", # redundant-backslash
+    # "F403", # undefined-local-with-import-star
+]
+
+[lint.mccabe]
+max-complexity = 15
+
+[format]
+indent-style = "space"
+quote-style = "double"
